@@ -68,7 +68,7 @@ Developed and deployed the official company website using **Astro** and **Vercel
 
 ---
 
-### 4. Layzos – Lazy Minting of NFTs *(Private Repo – Available on request)*  
+### 4. Layzos – Lazy Minting of NFTs 
 ![Tezos](https://img.shields.io/badge/Tezos-2C7DF7?style=for-the-badge&logo=tezos&logoColor=white)
 ![Blockchain](https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=blockchain-dot-com&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=white)
