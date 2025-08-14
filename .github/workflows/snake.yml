@@ -1,0 +1,27 @@
+name: Generate Snake Contribution Graph
+
+on:
+  schedule:
+    - cron: '0 */8 * * *'  # Runs every 8 hours to keep graph updated
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Generate snake graph SVG and GIF
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ShivamBarke
+          gif_out_path: dist/github-contribution-grid-snake.gif
+          svg_out_path: dist/github-contribution-grid-snake.svg
+          svg_dark_mode_out_path: dist/github-contribution-grid-snake-dark.svg
+
+      - name: Commit and push snake images to output branch
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: output
+          force: true
